@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <div><h1>{{pageTitle}}</h1>
+   <app-product></app-product>
+  </div>
+  `
 })
 export class AppComponent {
-  title = 'successAngular';
+  pageTitle = 'Acme Product Management';
 }
